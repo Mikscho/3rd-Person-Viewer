@@ -13,31 +13,8 @@
 						<div class='panel panel-primary'>
 							<div class='panel-heading'>Throttle</div>
 							<div class='panel-body'>
-								<div class='row'>
-									<div class='col-sm-12 btn-group-vertical' role='group'>
-										<label class='label label-info'>fullspeed</label>
-										<button class='btn btn-primary' style="background-color:#8B0000" onclick="location.href='/10'">10</button>
-										<button class='btn btn-primary' style="background-color:#8B0000" onclick="location.href='/9'">9</button>
-										<button class='btn btn-primary' style="background-color:#8B0000" onclick="location.href='/8'">8</button>
-									</div>
-								</div>
-								<br />
-								<div class='row'>
-									<div class='col-sm-12 btn-group-vertical' role='group'>
-										<button class='btn btn-primary' style="background-color:#FFD700" onclick="location.href='/7'">7</button>
-										<button class='btn btn-primary' style="background-color:#FFD700" onclick="location.href='/6'">6</button>
-										<button class='btn btn-primary' style="background-color:#FFD700" onclick="location.href='/5'">5</button>
-									</div>
-								</div>
-								<br />
-								<div class='row'>
-									<div class='col-sm-12 btn-group-vertical' role='group'>
-										<button class='btn btn-primary' style="background-color:#008000" onclick="location.href='/4'">4</button>
-										<button class='btn btn-primary' style="background-color:#008000" onclick="location.href='/3'">3</button>
-										<button class='btn btn-primary' style="background-color:#008000" onclick="location.href='/2'">2</button>
-										<button class='btn btn-primary' style="background-color:#008000" onclick="location.href='/1'">1</button>
-										<label class='label label-info'>no speed</label>
-									</div>
+								<div class="slidecontainer">
+									<input type="range" min="1000" max="2000" value="1500" class="slider" id="Slider" style="-webkit-appearance: slider-vertical;min-height: 400px;">
 								</div>
 							</div>
 						</div>
@@ -45,22 +22,10 @@
 					<div class="col-sm-10">
 						<div class='panel panel-primary'>
 							<div class='panel-heading'>Yaw</div>
-							<div class='panel-body' class='btn-group btn-group-justified' role='group'>
-								<label class='label label-info'>left</label>
-								<button class='btn btn-primary' onclick="location.href='/95'">5</button>
-								<button class='btn btn-primary' onclick="location.href='/96'">4</button>
-								<button class='btn btn-primary' onclick="location.href='/97'">3</button>
-								<button class='btn btn-primary' onclick="location.href='/98'">2</button>
-								<button class='btn btn-primary' onclick="location.href='/99'">1</button>
-								
-								<button class='btn btn-success' onclick="location.href='/100'">Neutral</button>
-								
-								<button class='btn btn-primary' onclick="location.href='/101'">1</button>
-								<button class='btn btn-primary' onclick="location.href='/102'">2</button>
-								<button class='btn btn-primary' onclick="location.href='/103'">3</button>
-								<button class='btn btn-primary' onclick="location.href='/104'">4</button>
-								<button class='btn btn-primary' onclick="location.href='/105'">5</button>
-								<label class='label label-info'>right</label>
+							<div class='panel-body'>
+								<div class="slidecontainer">
+									<input type="range" min="11000" max="12000" value="11500" class="slider" id="Slider">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -74,32 +39,8 @@
 						<div class='panel panel-primary'>
 							<div class='panel-heading'>Pitch</div>
 							<div class='panel-body'>
-								<div class='row'>
-									<div class='col-sm-12 btn-group-vertical' role='group'>
-										<label class='label label-info'>forward</label>
-										<button class='btn btn-primary' onclick="location.href='/195'">5</button>
-										<button class='btn btn-primary' onclick="location.href='/196'">4</button>
-										<button class='btn btn-primary' onclick="location.href='/197'">3</button>
-										<button class='btn btn-primary' onclick="location.href='/198'">2</button>
-										<button class='btn btn-primary' onclick="location.href='/199'">1</button>
-									</div>
-								</div>
-								<br />
-								<div class='row'>
-									<div class='col-sm-12 btn-group-vertical' role='group'>
-										<button class='btn btn-success' onclick="location.href='/200'">Neutral</button>
-									</div>
-								</div>
-								<br />
-								<div class='row'>
-									<div class='col-sm-12 btn-group-vertical' role='group'>
-										<button class='btn btn-primary' onclick="location.href='/201'">1</button>
-										<button class='btn btn-primary' onclick="location.href='/202'">2</button>
-										<button class='btn btn-primary' onclick="location.href='/203'">3</button>
-										<button class='btn btn-primary' onclick="location.href='/204'">4</button>
-										<button class='btn btn-primary' onclick="location.href='/205'">5</button>
-										<label class='label label-info'>back</label>
-									</div>
+								<div class="slidecontainer">
+									<input type="range" min="21000" max="22000" value="21500" class="slider" id="Slider" style="-webkit-appearance: slider-vertical;min-height: 400px;">
 								</div>
 							</div>
 						</div>
@@ -107,27 +48,24 @@
 					<div class="col-sm-10">
 						<div class='panel panel-primary'>
 							<div class='panel-heading'>Roll</div>
-							<div class='panel-body' class='btn-group btn-group-justified' role='group'>
-								<label class='label label-info'>left</label>
-								<button class='btn btn-primary' onclick="location.href='/295'">5</button>
-								<button class='btn btn-primary' onclick="location.href='/296'">4</button>
-								<button class='btn btn-primary' onclick="location.href='/297'">3</button>
-								<button class='btn btn-primary' onclick="location.href='/298'">2</button>
-								<button class='btn btn-primary' onclick="location.href='/299'">1</button>
-								
-								<button class='btn btn-success' onclick="location.href='/300'">Neutral</button>
-								
-								<button class='btn btn-primary' onclick="location.href='/301'">1</button>
-								<button class='btn btn-primary' onclick="location.href='/302'">2</button>
-								<button class='btn btn-primary' onclick="location.href='/303'">3</button>
-								<button class='btn btn-primary' onclick="location.href='/304'">4</button>
-								<button class='btn btn-primary' onclick="location.href='/305'">5</button>
-								<label class='label label-info'>right</label>
+							<div class='panel-body'>
+								<div class="slidecontainer">
+									<input type="range" min="31000" max="32000" value="31500" class="slider" id="Slider">
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<script>
+			var sliders = document.getElementsByClassName("slider");
+			for (var i = 0; i < sliders.length; i++) {
+				sliders.item(i).oninput = function() {
+				slhref = "/" + this.value;
+					window.location.assign(slhref);
+				}
+			}
+</script>
 	</body>
 </html>
